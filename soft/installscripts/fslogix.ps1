@@ -16,5 +16,5 @@ write-host 'AIB Customization: Download Fslogix installer finished'
 
 write-host 'AIB Customization: Start Fslogix installer'
 Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Force -Verbose
-.\\FSLogixSetup.ps1 -ProfilePath \\wvdSMB\wvd -Verbose 
+.\\FSLogixSetup.ps1 -ProfilePath \\baramwayfs01.file.core.windows.net\fslogix\ -Verbose 
 write-host 'AIB Customization: Finished Fslogix installer' 
