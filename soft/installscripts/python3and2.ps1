@@ -1,6 +1,6 @@
 # This is the link to download current version of python from Python.org
 # See https://www.python.org/downloads/
-$pythonUrl = "https://www.python.org/ftp/python/3.9.0/python-3.9.0.exe"
+$pythonUrl = "https://www.python.org/ftp/python/3.10.5/python-3.10.5.exe"
 
 # This is the directory that the exe is downloaded to
 $tempDirectory = "C:\temp_provision\"
@@ -10,7 +10,7 @@ $tempDirectory = "C:\temp_provision\"
 $targetDir = "C:\Python"
 
 # create the download directory and get the exe file
-$pythonNameLoc = $tempDirectory + "python-3.9.0.exe"
+$pythonNameLoc = $tempDirectory + "python-3.10.5.exe"
 New-Item -ItemType directory -Path $tempDirectory -Force | Out-Null
 [Net.ServicePointManager]::SecurityProtocol = [Net.SecurityProtocolType]::Tls12
 (New-Object System.Net.WebClient).DownloadFile($pythonUrl, $pythonNameLoc)
