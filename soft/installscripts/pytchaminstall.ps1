@@ -7,7 +7,7 @@ $destination = 'c:\temp\pytcham.exe'
 Invoke-WebRequest -Uri $source -OutFile $destination
 $sourceconf = 'https://raw.githubusercontent.com/hrb9/BuildImage/main/soft/installscripts/silent.config'
 # Destination to save the file
-$destinationconf = 'c:\temp\psilent.config'
+$destinationconf = 'c:\temp\silent.config'
 #Download the file
 Invoke-WebRequest -Uri $sourceconf -OutFile $destinationconf
 cd c:\temp\
