@@ -1,0 +1,14 @@
+mkdir c:\temp 
+# downlowd pytcham
+$source = 'https://www.jetbrains.com/pycharm/download/download-thanks.html?platform=windows'
+# Destination to save the file
+$destination = 'c:\temp\pytcham.exe'
+#Download the file
+Invoke-WebRequest -Uri $source -OutFile $destination
+$sourceconf = 'https://www.jetbrains.com/pycharm/download/download-thanks.html?platform=windows'
+# Destination to save the file
+$destinationconf = 'c:\temp\psilent.config'
+#Download the file
+Invoke-WebRequest -Uri $sourceconf -OutFile $destinationconf
+cd c:\temp\
+pycharm-professional.exe /S /CONFIG=c:\temp\silent.config /D=c:\IDE\PyCharm
