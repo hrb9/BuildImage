@@ -5,7 +5,7 @@ $source = 'https://www.jetbrains.com/pycharm/download/download-thanks.html?platf
 $destination = 'c:\temp\pytcham.exe'
 #Download the file
 Invoke-WebRequest -Uri $source -OutFile $destination
-$sourceconf = 'https://www.jetbrains.com/pycharm/download/download-thanks.html?platform=windows'
+$sourceconf = 'https://raw.githubusercontent.com/hrb9/BuildImage/main/soft/installscripts/silent.config'
 # Destination to save the file
 $destinationconf = 'c:\temp\psilent.config'
 #Download the file
