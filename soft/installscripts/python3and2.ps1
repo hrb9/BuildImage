@@ -154,6 +154,5 @@ Invoke-WebRequest -Outfile  $env:userprofile\pip.py https://bootstrap.pypa.io/ge
 sleep 30
 C:\Python27\python.exe  $env:userprofile\pip.py
 C:\Python27\Scripts\pip.exe install boto
-C:\Python27\Scripts\pip.exe install awscli
 del $env:userprofile\pip.py
 del $env:userprofile\python.msi
