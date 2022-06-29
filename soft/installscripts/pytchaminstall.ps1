@@ -1,6 +1,6 @@
 mkdir c:\temp 
 # downlowd pytcham
-$source = 'https://www.jetbrains.com/pycharm/download/download-thanks.html?platform=windows'
+$source = 'https://download.jetbrains.com/python/pycharm-professional-2022.1.3.exe?_gl=1*1mtapno*_ga*NDEwNDMzMTEzLjE2NTY1MTE1NzU.*_ga_9J976DJZ68*MTY1NjUxMTU3NC4xLjEuMTY1NjUxMTg0OC4w&_ga=2.56679971.884450988.1656511575-410433113.1656511575'
 # Destination to save the file
 $destination = 'c:\temp\pytcham.exe'
 #Download the file
