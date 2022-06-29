@@ -1,4 +1,4 @@
-
+mkdir c:\temp
 # downlowd Office
 $source = 'https://github.com/hrb9/BuildImage/blob/main/soft/source/officeonetouch.exe?raw=true'
 
