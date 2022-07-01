@@ -12,4 +12,4 @@ $destinationconf = 'c:\temp\vs.17.json'
 #Download the file
 Invoke-WebRequest -Uri $sourceconf -OutFile $destinationconf
 cd c:\temp\
-c:\temp\vsinstall.ps1 -Edition Community -Passive
+c:\temp\vsinstall.ps1 -Edition Community -Quiet
