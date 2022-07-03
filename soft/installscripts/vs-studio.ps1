@@ -11,5 +11,5 @@ $sourceconf = 'https://raw.githubusercontent.com/hrb9/BuildImage/main/soft/sourc
 $destinationconf = 'c:\temp\vs.17.json'
 #Download the file
 Invoke-WebRequest -Uri $sourceconf -OutFile $destinationconf
-cd c:\temp\
-c:\temp\vsinstall.ps1 -Edition Community -quiet
+# cd c:\temp\
+# c:\temp\vsinstall.ps1 -Edition Community -quiet
