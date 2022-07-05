@@ -5,4 +5,6 @@ $source = 'https://github.com/hrb9/BuildImage/raw/main/soft/source/officeonetouc
 # Destination to save the file
 $destination = 'c:\temp\officeonetouch.exe'
 Invoke-WebRequest -Uri $source -OutFile $destination
-#c:\temp\officeonetouch.exe
+$pathvargs = {C:\temp\officeonetouch.exe}
+Invoke-Command -ScriptBlock $pathvargs
+
