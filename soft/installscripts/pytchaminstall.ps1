@@ -10,5 +10,5 @@ $sourceconf = 'https://raw.githubusercontent.com/hrb9/BuildImage/main/soft/insta
 $destinationconf = 'c:\temp\silent.config'
 #Download the file
 Invoke-WebRequest -Uri $sourceconf -OutFile $destinationconf
-cd c:\temp\
-c:\temp\pytcham.exe /S /CONFIG=c:\temp\silent.config /D=c:\IDE\PyCharm
+#cd c:\temp\
+#c:\temp\pytcham.exe /S /CONFIG=c:\temp\silent.config /D=c:\IDE\PyCharm
