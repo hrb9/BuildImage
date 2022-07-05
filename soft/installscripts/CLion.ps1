@@ -10,5 +10,5 @@ $sourceconf = 'https://raw.githubusercontent.com/hrb9/BuildImage/main/soft/insta
 $destinationconf = 'c:\temp\silentCLion.config'
 #Download the file
 Invoke-WebRequest -Uri $sourceconf -OutFile $destinationconf
-cd c:\temp\
-c:\temp\clion.exe /S /CONFIG=c:\temp\silentCLion.config /D=c:\IDE\CLion
+#cd c:\temp\
+#c:\temp\clion.exe /S /CONFIG=c:\temp\silentCLion.config /D=c:\IDE\CLion
