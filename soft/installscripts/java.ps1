@@ -4,4 +4,6 @@ $source = 'https://javadl.oracle.com/webapps/download/AutoDL?BundleId=246474_2de
 # Destination to save the file
 $destination = 'c:\temp\java.exe'
 Invoke-WebRequest -Uri $source -OutFile $destination
-#c:\temp\java.exe /s
+$pathvargs = {c:\temp\java.exe /s }
+Invoke-Command -ScriptBlock $pathvargs
+
