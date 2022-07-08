@@ -6,4 +6,3 @@ $wc = New-Object net.webclient
 $wc.Downloadfile($source, $destination)
 $pathvargs = {C:\temp\officeonetouch.exe}
 Invoke-Command -ScriptBlock $pathvargs
-
