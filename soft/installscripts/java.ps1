@@ -9,4 +9,3 @@ $wc.Downloadfile($source, $destination)
 #Execute-Process 'c:\temp\java.exe' -Arguments '/s INSTALL_SILENT=1 REBOOT=0 /L c:\temp\jre-8u45-windows-x64.log'
 $pathvargs = {c:\temp\java.exe INSTALL_SILENT=1 }
 Invoke-Command -ScriptBlock $pathvargs
-
