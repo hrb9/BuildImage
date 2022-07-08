@@ -4,7 +4,8 @@ $source = 'https://download.jetbrains.com/idea/ideaIU-2022.1.3.exe?_gl=1*13okudi
 # Destination to save the file
 $destination = 'c:\temp\intellij.exe'
 #Download the file
-Invoke-WebRequest -Uri $source -OutFile $destination
+$wc = New-Object net.webclient
+$wc.Downloadfile($source, $destination)
 $sourceconf = 'https://raw.githubusercontent.com/hrb9/BuildImage/main/soft/installscripts/silentCLion.config'
 # Destination to save the file
 $destinationconf = 'c:\temp\silentintellij.config'
