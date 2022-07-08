@@ -11,6 +11,6 @@ $sourceconf = 'https://raw.githubusercontent.com/hrb9/BuildImage/main/soft/insta
 $destinationconf = 'c:\temp\silentintellij.config'
 #Download the file
 Invoke-WebRequest -Uri $sourceconf -OutFile $destinationconf
-#$pathvargs = {c:\temp\intellij.exe /S /CONFIG=c:\temp\silentCLion.config /D=c:\IDE\intellij }
-#Invoke-Command -ScriptBlock $pathvargs
+$pathvargs = {c:\temp\intellij.exe /S /CONFIG=c:\temp\silentintellij.config /D=c:\IDE\intellij }
+Invoke-Command -ScriptBlock $pathvargs
 
