@@ -4,7 +4,9 @@ $source = 'https://download.jetbrains.com/cpp/CLion-2022.1.3.exe?_gl=1*1c7v9b2*_
 # Destination to save the file
 $destination = 'c:\temp\clion.exe'
 #Download the file
-Invoke-WebRequest -Uri $source -OutFile $destination
+$wc = New-Object net.webclient
+$wc.Downloadfile($source, $destination)
+#Invoke-WebRequest -Uri $source -OutFile $destination
 $sourceconf = 'https://raw.githubusercontent.com/hrb9/BuildImage/main/soft/installscripts/silentCLion.config'
 # Destination to save the file
 $destinationconf = 'c:\temp\silentCLion.config'
