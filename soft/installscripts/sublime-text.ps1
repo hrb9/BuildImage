@@ -1,4 +1,3 @@
-mkdir c:\temp 
 # downlowd Sublime Text
 $source = 'https://download.sublimetext.com/sublime_text_build_4126_x64_setup.exe'
 # Destination to save the file
