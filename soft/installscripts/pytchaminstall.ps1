@@ -12,4 +12,3 @@ $destinationconf = 'c:\temp\silent.config'
 Invoke-WebRequest -Uri $sourceconf -OutFile $destinationconf
 $pathvargs = {c:\temp\pytcham.exe /S /CONFIG=c:\temp\silent.config /D=c:\IDE\PyCharm }
 Invoke-Command -ScriptBlock $pathvargs
-
