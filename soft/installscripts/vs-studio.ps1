@@ -1,5 +1,3 @@
-
-mkdir c:\temp 
 # downlowd Script
 $source = 'https://raw.githubusercontent.com/hrb9/BuildImage/main/soft/source/vsinstall.ps1'
 # Destination to save the file
