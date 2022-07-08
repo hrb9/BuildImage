@@ -5,7 +5,7 @@ $destination = 'c:\temp\intellij.exe'
 #Download the file
 $wc = New-Object net.webclient
 $wc.Downloadfile($source, $destination)
-$sourceconf = 'https://raw.githubusercontent.com/hrb9/BuildImage/main/soft/installscripts/silentCLion.config'
+$sourceconf = 'https://raw.githubusercontent.com/hrb9/BuildImage/main/soft/installscripts/silentintellij.config'
 # Destination to save the file
 $destinationconf = 'c:\temp\silentintellij.config'
 #Download the file
