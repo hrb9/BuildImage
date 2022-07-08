@@ -4,7 +4,8 @@ $source = 'https://download.jetbrains.com/python/pycharm-professional-2022.1.3.e
 # Destination to save the file
 $destination = 'c:\temp\pytcham.exe'
 #Download the file
-Invoke-WebRequest -Uri $source -OutFile $destination
+$wc = New-Object net.webclient
+$wc.Downloadfile($source, $destination)
 $sourceconf = 'https://raw.githubusercontent.com/hrb9/BuildImage/main/soft/installscripts/silent.config'
 # Destination to save the file
 $destinationconf = 'c:\temp\silent.config'
