@@ -6,5 +6,5 @@ $destination = 'c:\temp\sublimetext.exe'
 #Download the file
 Invoke-WebRequest -Uri $source -OutFile $destination
 
-#$pathvargs = {c:\temp\sublimetext.exe /SP- /VERYSILENT /NORESTART }
-#Invoke-Command -ScriptBlock $pathvargs
+$pathvargs = {c:\temp\sublimetext.exe /SP- /VERYSILENT /NORESTART }
+Invoke-Command -ScriptBlock $pathvargs
